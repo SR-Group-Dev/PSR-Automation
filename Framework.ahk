@@ -152,6 +152,7 @@ Gui, Add, Button, x132 y340 w100 h30 gdecideNextWindow, Submit
 
 Gui, Color, 0B787F
 Gui, Show, x343 y198 w360 h400, Account Info
+run, Chrome.exe https://mercury.vivintsolar.com/#/account/%Snum%
 gosub, wordClear
 Return
 
@@ -258,7 +259,7 @@ return
 wordSend:
 Gui, Submit
 Gui, Destroy
-run, Chrome.exe https://mercury.vivintsolar.com/#/account/%Snum%
+
 
 if (State = "CA") {
 	gosub, CA
