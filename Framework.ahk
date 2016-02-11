@@ -39,6 +39,7 @@ Gui, Add, Text, x42 y10 w160 h40 +Center, AHK Automation
 Gui, Font, S12 CDefault Bold, Verdana
 ; Generated using SmartGUI Creator 4.0
 Gui, Show, x195 y105 h274 w246, Start
+Gosub, init
 Return
 
 GuiClose:
@@ -52,7 +53,6 @@ Gui, Add, Button, x72 y190 w100 h30 gwindow2 , Start
 Gui, Add, Edit, x42 y100 w150 h20 vAccountList ,
 Gui, Add, Text, x42 y10 w160 h40 +Center, AHK Automation
 Gui, Font, S12 CDefault Bold, Verdana
-; Generated using SmartGUI Creator 4.0
 Gui, Show, x195 y105 w246 h274, Start
 Return
 ;Gui, Add, Edit, x42 y100 w150 h20 vAccountList ,
@@ -216,7 +216,7 @@ return
 decideNextWindow:
 Gui, Submit
 Gui, Destroy
-if (Snum = "" || LastName = "" || Address = "" || City = "" || Kw = "" || srDate = "" || State = "" || MountType = "")
+if (Snum = "" || LastName = "" || Address = "" || City = "" || Kw = "" || srDate = "" || State = "" || MountType = "" || MountType = "Select Mount Type:")
 {
 	Msgbox Fill out all values.  Thanks.
 	Gosub, window2
@@ -281,7 +281,7 @@ else if(State = "NY") {
 }
 else {
 	Msgbox , "Pick a State next time!"
-	ExitApp
+	Gosub, window2
 }
 Return
 
@@ -331,30 +331,30 @@ else {
 Loop, Parse, AccountList, %A_Tab% 
 {
 
-If (A_Index = 1) {
+If (A_Index = 2) {
 Snum = %A_LoopField% 
 }
-if (A_Index = 2) {
+if (A_Index = 3) {
 LastName = %A_LoopField%
 }
-if (A_Index = 3) {
+if (A_Index = 4) {
 Address := A_LoopField
 StringUpper, Address, Address , T
 }
-if (A_Index = 4) {
+if (A_Index = 5) {
 City := A_LoopField
 StringUpper, City, City , T
 }
-if (A_Index = 5) {
+if (A_Index = 6) {
 State = %A_LoopField%
 }
-if (A_Index = 6) {
+if (A_Index = 7) {
 Kw = %A_LoopField%
 }
-if (A_Index = 7) {
+if (A_Index = 8) {
 SRDate = %A_LoopField%
 }
-if (A_Index = 8) {
+if (A_Index = 9) {
 Office = %A_LoopField%
 }
 }
@@ -487,4 +487,16 @@ FileCreateDir, \\Media01\solar\Structural Engineering\01 Vivint 2016\Post Struct
 FileCreateDir, \\Media01\solar\Structural Engineering\01 Vivint 2016\Post Structurals\%MonthNumber%-%Month%\Completed files\%todaysFolder%\MD
 FileCreateDir, \\Media01\solar\Structural Engineering\01 Vivint 2016\Post Structurals\%MonthNumber%-%Month%\Completed files\%todaysFolder%\NJ
 FileCreateDir, \\Media01\solar\Structural Engineering\01 Vivint 2016\Post Structurals\%MonthNumber%-%Month%\Completed files\%todaysFolder%\NY
+return
+
+
+init:
+Snum = ""
+LastName = ""
+Address = ""
+City = ""
+State = 
+Kw = ""
+SRDate = ""
+Office = ""
 return
