@@ -7,9 +7,11 @@ FormatTime, todaysFolder ,, dd MMM yy
 FormatTime, Year ,, yy
 FormatTime, Month ,, MMMM
 FormatTime, MonthNumber ,, MM
+FormatTime, day ,, dd
 SetWorkingDir %A_ScriptDir%
 FileCreateDir, %A_WorkingDir%\Stamps
 Gosub, generator
+Gosub, settings
 file := % A_WorkingDir "\Stamps\signature.png" 
 ScottMA := % A_WorkingDir "\Stamps\MA.png"
 ScottCA := % A_WorkingDir "\Stamps\scottCAstamp_clear.png"
@@ -513,13 +515,13 @@ return
 
 checkIfNeeded:
 
-Loop, read, AB.csv
+Loop, read, %A_WorkingDir%\Stamps\AB.csv
 {
     LineNumber = %A_Index%
     Loop, parse, A_LoopReadLine, CSV
     {
 	field%a_index%=%A_LoopField%
-    }
+    } 
     
  if (field1 = State) {
  if (field2 = City) {
@@ -535,5 +537,30 @@ Loop, read, AB.csv
    	break
    }
 }
+
+return
+
+listdownload:
+
+Run, Chrome.exe  https://docs.google.com/a/vivintsolar.com/spreadsheets/d/1FUjhMUbod0YTpbhmPZ2cKFey_uMYXqS6yqOlyZOlRTY/gviz/tq?tqx=out:csv&tq&gid=1142973504, hide
+
+While !FileExist("C:\Users\" A_UserName "\Downloads\data.csv" ) {
+    sleep, 250
+}
+
+Filecopy, C:\Users\%A_UserName%\Downloads\data.csv, %A_WorkingDir%\Stamps\AB.csv , 1
+FileDelete, C:\Users\%A_UserName%\Downloads\data.csv
+return
+
+
+settings:
+
+IniRead, lastupdate, %A_WorkingDir%\Stamps\Settings.ini, Section1, Last open , 0
+
+if (lastupdate<day || lastupdate = 0) {
+  IniWrite,%day%, %A_WorkingDir%\Stamps\Settings.ini, Section1 , Last open
+  Msgbox , updating
+  Gosub, listdownload
+} 
 
 return
