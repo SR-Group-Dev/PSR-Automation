@@ -63,6 +63,8 @@ Gui, Submit
 Gui, Destroy
 counter = 0;
 Gosub, accountParse
+
+
 if (State = "CA")
 {
 	vOption = Select State:|CA||CT|MA|MD|NJ|NY 
@@ -260,6 +262,13 @@ wordSend:
 Gui, Submit
 Gui, Destroy
 
+Gosub, checkIfNeeded
+
+if (req = 0){
+   	Msgbox %City% %State1% is not needed
+   	ExitApp
+   }
+
 
 if (State = "CA") {
 	gosub, CA
@@ -347,6 +356,7 @@ StringUpper, City, City , T
 }
 if (A_Index = 6) {
 State = %A_LoopField%
+State1 = %A_LoopField%
 }
 if (A_Index = 7) {
 Kw = %A_LoopField%
@@ -495,8 +505,35 @@ Snum = ""
 LastName = ""
 Address = ""
 City = ""
-State = 
+State = ""
 Kw = ""
 SRDate = ""
 Office = ""
+return
+
+checkIfNeeded:
+
+Loop, read, AB.csv
+{
+    LineNumber = %A_Index%
+    Loop, parse, A_LoopReadLine, CSV
+    {
+	field%a_index%=%A_LoopField%
+    }
+    
+ if (field1 = State) {
+ if (field2 = City) {
+      req = 1
+   		} else{
+   			req = 0
+   		}
+   } else {
+   		req = 0
+   }
+
+   if (req = 1){
+   	break
+   }
+}
+
 return

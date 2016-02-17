@@ -1,0 +1,217 @@
+State,City,County/notes
+CA,Yucca Valley,
+CT,Stamford,
+MA,Abington,
+MA,Amesbury,
+MA,Andover,
+MA,Arlington,
+MA,Auburn,
+MA,Avon,
+MA,Bellingham,
+MA,Beverly,
+MA,Billerica,
+MA,Boston,
+MA,Bridgewater,
+MA,Brighton,
+MA,Brockton,
+MA,Chelmsford,
+MA,Chelsea,
+MA,Clinton,
+MA,Dorchester,
+MA,East Bridgewater,
+MA,East Wareham,
+MA,East Weymouth,
+MA,Essex,
+MA,Everett,
+MA,Fall River,
+MA,Framingham,
+MA,Gloucester,
+MA,Hamilton,
+MA,Hanover,
+MA,Hanson,
+MA,Haverhill,
+MA,Holbrook,
+MA,Holliston,
+MA,Hyde Park,
+MA,Lawrence,
+MA,Lexington,
+MA,Lowell,
+MA,Lynn,
+MA,Malden,
+MA,Marshfield,
+MA,Mattapan,
+MA,Medford,
+MA,Melrose,
+MA,Milton,
+MA,New Bedford,
+MA,Newbury,
+MA,Newburyport,
+MA,Newton,
+MA,North Andover,
+MA,North Chelmsford,
+MA,North Wareham,
+MA,North Weymouth,
+MA,Northbridge,
+MA,Norwell,
+MA,Pembroke,
+MA,Plainville,
+MA,Quincy,
+MA,Rehoboth,
+MA,Revere,
+MA,Rockland,
+MA,Roslindale,
+MA,Salisbury,
+MA,Seekonk,
+MA,Somerset,
+MA,South Wareham,
+MA,South Weymouth,
+MA,Stoneham,
+MA,Stoughton,
+MA,Swampscott,
+MA,Swansea,
+MA,Tewksbury,
+MA,Tyngsboro,
+MA,Uxbridge,
+MA,Walpole,
+MA,Watertown,
+MA,Wenham,
+MA,West Wareham,
+MA,West Weymouth,
+MA,West Roxbury,
+MA,Westford,
+MA,Westport,
+MA,Westwood,
+MA,Whitinsville,
+MA,Whitman,
+MA,Winthrop,
+MA,Worcester,
+MA,Wrentham,
+MD,Benedict,
+MD,Bryantown,
+MD,Cobb Island,
+MD,Dentsville,
+MD,Faulkner,
+MD,Hill Top,
+MD,Indian Head,
+MD,Ironsides,
+MD,La Plata,
+MD,Malcolm,
+MD,Marbury,
+MD,Masons,
+MD,Morgantown,
+MD,Mount Victoria,
+MD,Nanjemoy,
+MD,Newburg,
+MD,Newport,
+MD,Patuxent,
+MD,Pisgah,
+MD,Pomonkey,
+MD,Popes Creek,
+MD,Port Tobacco Village,
+MD,Ripley,
+MD,Rison,
+MD,Riverside,
+MD,Rock Point,
+MD,Swan Point,
+MD,Welcome,
+MD,White Plains,
+NJ,Bloomfield,HC(3), Requires AB CAD
+NJ,Bordentown,HC(3)
+NJ,Bound Brook,HC(3), Requires AB CAD
+NJ,Bridgewater,HC(3), Requires AB CAD
+NJ,Burlington County,HC(3)
+NJ,Chesterfield,HC(3)
+NJ,Cinnaminson,HC(3)
+NJ,Denville,HC(3)
+NJ,Dover,HC(3), Requires AB CAD
+NJ,East Brunswick,HC(3)
+NJ,East Brunswick,HC (3) 
+NJ,East Orange,HC(3)
+NJ,Edison ,HC (3) 
+NJ,Emerson,HC(3), Requires AB CAD
+NJ,Ewing,HC(3)
+NJ,Fort Lee,HC(3)
+NJ,Franklin,HC (3) 
+NJ,Lake Hiawatha,HC(3)
+NJ,Lodi,HC(3)
+NJ,Middlesex,HC(3)
+NJ,Mine Hill,HC(3), Requires AB CAD
+NJ,Morris Plains,HC(3)
+NJ,Paramus,HC(3)
+NJ,Parsippany,HC(3), Requires AB CAD
+NJ,Somerset ,HC(3)
+NJ,South Bound Brook,HC(3)
+NJ,Wayne,HC(3)
+NJ,West Hampton,HC(3)
+NJ,Willingboro,HC(3)
+NY,Amityville,Babylon
+NY,Babylon,Babylon
+NY,Bayport,Islip
+NY,Bay Shore,Islip
+NY,Bellport,Brookhaven
+NY,Blue Point,Brookhaven
+NY,Bohemia,Islip
+NY,Brentwood,Islip
+NY,Brightwaters,Islip
+NY,Brookhaven,Brookhaven
+NY,Calverton,Brookhaven
+NY,Center Moriches,Brookhaven
+NY,Centereach,Brookhaven
+NY,Central Islip,Islip
+NY,Clifton Park,
+NY,Copiague,Babylon
+NY,Coram,Brookhaven
+NY,Deer Park,Babylon
+NY,East Islip,Islip
+NY,East Meadow,Nassau
+NY,East Patchogue,Brookhaven
+NY,East Moriches,Brookhaven
+NY,East Setauket,Brookhaven
+NY,Eastport,Brookhaven
+NY,Farmingville,Brookhaven
+NY,Farmingdale,Babylon/Oyster Bay
+NY,Great Hiver,Islip
+NY,Hauppage,Islip
+NY,Holbrook,Brookhaven/Islip
+NY,Holtsville,Brookhaven/Islip
+NY,Islandia,Islip
+NY,Islip,Islip
+NY,Islip Terrace,Islip
+NY,Lake Grove,Brookhaven
+NY,Lindenhurst,Babylon
+NY,Manorville,Brookhaven
+NY,Mastic,Brookhaven
+NY,Mastic Beach,Brookhaven
+NY,Medford,Brookhaven
+NY,Middle Island,Brookhaven
+NY,Miller Place,Brookhaven
+NY,Moriches,Brookhaven
+NY,Mount Sinai,Brookhaven
+NY,Nassau County,
+NY,North Amityville,Babylon
+NY,North Babylon,Babylon
+NY,North Bellmore,Nassau
+NY,North Patchogue,Brookhaven
+NY,Oakdale,Islip
+NY,Ocean Beach,Islip
+NY,Patchogue,Brookhaven
+NY,Port Jefferson,Brookhaven
+NY,Port Jefferson Station,Brookhaven
+NY,Ridge,Brookhaven
+NY,Rocky Point,Brookhaven
+NY,Ronkonkoma,Brookhaven/Islip
+NY,Sayville,Islip
+NY,Seaford,Nassau
+NY,Selden,Brookhaven
+NY,Shirley,Brookhaven
+NY,Shoreham,Brookhaven
+NY,Sound Beach,Brookhaven
+NY,South Setauket,Brookhaven
+NY,Stony Brook,Brookhaven
+NY,Upton,Brookhaven
+NY,Wading River,Brookhaven
+NY,West Babylon,Babylon
+NY,West Islip,Babylon/Islip
+NY,West Sayville,Islip
+NY,Wyandach,Babylon
+NY,Yaphank,Brookhaven
